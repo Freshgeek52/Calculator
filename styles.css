@@ -1,0 +1,84 @@
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    height: 450px;
+    
+  }
+
+  /* Set the style of our screen*/
+  .screen {
+    padding: 10px 20px;
+    border: 2px var(--border) solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: right;
+    grid-column: span 4;
+    padding: 10px;
+    background-color: #f2f2f2;
+    text-align: right;
+  }
+  
+  .screen-last {
+    min-height: 32px;
+    font-size: 20px;
+  }
+  
+  .screen-current {
+    min-height: 64px;
+    font-size: 40px;
+  }
+  
+  
+  button {
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  #deleteBtn {
+    background-color: aqua;
+    color: #000; 
+    border: 2px solid #0ff;
+    grid-column: span 2;
+  }
+
+  #clearBtn{
+    background-color: rgb(255, 0, 0); 
+    color: #000; 
+    border: 2px solid rgb(255, 0, 0); 
+    grid-column: span 2;
+  }
+  
+   /*footer section*/
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .fa-github {
+    color: var(--primary-dark);
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+  }
+
+.fab.fa-github {
+    color: black;
+}
